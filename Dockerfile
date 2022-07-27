@@ -2,6 +2,6 @@ FROM ubuntu:22.10
 
 WORKDIR /app
 
-RUN apk update && apk add curl
+RUN apt update && apt install -y curl unzip
 
-RUN curl https://bun.sh/install | ash
+RUN curl https://bun.sh/install | bash
